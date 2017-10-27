@@ -37,7 +37,7 @@ class LineChart extends Component {
     return ((svgHeight - xLabelSize) * gY.max - (svgHeight - xLabelSize) * y) / (gY.max - gY.min);
   }
 
-  
+
   makePath() {
     const {data, color} = this.props;
     let pathD = "M " + this.getSvgX(data[0].x) + " " + this.getSvgY(data[0].y) + " ";
@@ -50,7 +50,6 @@ class LineChart extends Component {
       <path className="linechart_path" d={pathD} style={{stroke: color}} />
     );
   }
-
 
   makeArea() {
     const {data} = this.props;
@@ -67,7 +66,6 @@ class LineChart extends Component {
 
     return <path className="linechart_area" d={pathD} />
   }
-
 
   makeAxis() {
     const {yLabelSize} = this.props;
@@ -93,7 +91,7 @@ class LineChart extends Component {
     return(
       <g className="linechart_label">
 
-  
+
         <text transform={`translate(${yLabelSize/2}, 20)`} textAnchor="middle">
           {this.getY().max.toLocaleString('us-EN',{ style: 'currency', currency: 'USD' })}
         </text>
@@ -101,7 +99,7 @@ class LineChart extends Component {
           {this.getY().min.toLocaleString('us-EN',{ style: 'currency', currency: 'USD' })}
         </text>
 
-    
+
         <text transform={`translate(${yLabelSize}, ${svgHeight})`} textAnchor="start">
           { this.props.data[0].d }
         </text>
@@ -112,11 +110,10 @@ class LineChart extends Component {
     )
   }
 
-
   getCoords(e){
     const {svgWidth, data, yLabelSize} = this.props;
     const svgLocation = document.getElementsByClassName("linechart")[0].getBoundingClientRect();
-    const adjustment = (svgLocation.width - svgWidth) / 2; //takes padding into consideration
+    const adjustment = (svgLocation.width - svgWidth) / 2;
     const relativeLoc = e.clientX - svgLocation.left - adjustment;
 
     let svgData = [];
@@ -200,7 +197,6 @@ class LineChart extends Component {
     );
   }
 }
-
 
     LineChart.defaultProps = {
       data: [],
