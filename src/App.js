@@ -56,7 +56,7 @@ class App extends Component {
       <div className='container'>
         <div className='row'>
           <h1>CoinView</h1>
-          <img src={logo} href="/" className="logo" alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
       </div>
           <h3 id="subheading">Cryptocurrency Tracker</h3>
         <div className='row'>
