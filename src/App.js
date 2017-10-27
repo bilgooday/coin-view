@@ -4,6 +4,7 @@ import './App.css';
 import LineChart from './LineChart';
 import ToolTip from './ToolTip';
 import InfoBox from './InfoBox';
+import logo from './target.png'
 
 class App extends Component {
   constructor(props) {
@@ -55,8 +56,9 @@ class App extends Component {
       <div className='container'>
         <div className='row'>
           <h1>CoinView</h1>
+          <img src={logo} href="/" className="logo" alt="logo" />
       </div>
-          <h3 id="subheading">Track and monitor your crypto-assets!</h3>
+          <h3 id="subheading">Cryptocurrency Tracker</h3>
         <div className='row'>
           <div className='popup'>
             {this.state.hoverLoc ? <ToolTip hoverLoc={this.state.hoverLoc} activePoint={this.state.activePoint}/> : null}
