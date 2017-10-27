@@ -7,6 +7,9 @@
     "react-dom": "^15.6.1",
     "serve": "^6.0.3"
   },
+  "devDependencies": {
+    "react-scripts": "1.0.10"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
