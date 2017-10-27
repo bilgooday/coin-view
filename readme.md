@@ -1,2 +1,2 @@
-Interactive Bitcoin Price Chart *built with React & SVG*
+CoinView *built with React & SVG*
 ---
