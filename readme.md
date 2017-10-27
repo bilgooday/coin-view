@@ -3,7 +3,7 @@
 
 A simple, elegant way to track price movements for cryptocurrencies. *(Support for Ethereum coming soon!)*
 
-(https://user-images.githubusercontent.com/30474864/32114905-ce41c424-bb12-11e7-8295-af44e9a8454d.png)
+<img width="992" alt="screen shot 2017-10-27 at 12 29 43 pm" src="https://user-images.githubusercontent.com/30474864/32114905-ce41c424-bb12-11e7-8295-af44e9a8454d.png">
 
 ## How to Install
 1. Clone this repo(git clone https://github.com/bilgooday/coin-view)
